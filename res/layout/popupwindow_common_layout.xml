@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/translucence_activity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="255dip"
+        android:layout_height="166.67dip"
+        android:orientation="vertical"
+        android:background="@color/common_white"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/popupwindow_common_tips"
+            android:paddingLeft="15.3dip"
+            android:paddingRight="15.3dip"
+            android:layout_marginTop="33.3dip"
+            android:text="使用2G/3G网络将消耗流量，建议使用wifi"
+            android:layout_centerHorizontal="true"
+            style="@style/BFYun.TextAppearance.Smaller.Gray"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dip"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="40dip"
+            android:paddingLeft="27dip"
+            android:paddingRight="27dip">
+            
+            <Button
+                android:layout_width="94dip"
+                android:layout_height="32dip"
+                android:id="@+id/popupwindow_common_cancel"
+                android:layout_alignParentLeft="true"
+                android:text="@string/detail_dialog_cancel"
+                style="@style/BFYun.TextAppearance.Smaller.Gray"
+                android:background="@drawable/popupwindow_cancel_background"
+                />
+
+            <Button
+                android:layout_width="94dip"
+                android:layout_height="32dip"
+                android:id="@+id/popupwindow_common_ok"
+                android:text="@string/detail_dialog_ok"
+                style="@style/BFYun.TextAppearance.Smaller.White"
+                android:background="@drawable/popupwindow_ok_background"
+                android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>

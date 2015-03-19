@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="config_sub_title">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff0a5cad</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+    </style>
+
+    <style name="search_delete_history">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+
+    <style name="comment_star_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grade_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">10dip</item>
+    </style>
+
+    <style name="regist_regbtn_style">
+        <item name="android:textSize">@dimen/regist_regbtn_text_size</item>
+        <item name="android:textColor">@color/common_white</item>
+    </style>
+
+    <style name="plot_text_style">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+
+    <style name="Confirm_Window_Button" parent="BFYun.TextAppearance.Middle.White">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">42.666dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/btn_confirm_window</item>
+    </style>
+
+    <style name="BFYun" />
+
+    <!-- 文字默认显示 -->
+    <style name="BFYun.TextAppearance">
+        <item name="android:textColor">@color/text_default</item>
+    </style>
+    <!--文字超大字号 -->
+    <style name="BFYun.TextAppearance.SuperLarge">
+        <item name="android:textSize">@dimen/text_size_old_super_large</item>
+    </style>
+    <!--文字大字号 -->
+    <style name="BFYun.TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_old_large</item>
+    </style>
+    <!--文字大字号 浅黑色字体 -->
+    <style name="BFYun.TextAppearance.Large.LightBlack">
+        <item name="android:textColor">@color/text_light_black</item>
+    </style>
+
+    <!--文字更小字号灰色字体 -->
+    <style name="BFYun.TextAppearance.Smaller.Gray">
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <!--文字更小字号灰色字体 -->
+    <style name="BFYun.TextAppearance.Smaller.Orange">
+        <item name="android:textColor">@color/tips_text</item>
+    </style>
+
+    <!--标题超大白色文字风格 -->
+    <style name="BFYun.TextAppearance.SuperLarge.TitleGray">
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+    <!--标题大白色文字风格 -->
+    <style name="BFYun.TextAppearance.Large.TitleWhite">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+
+    <!--标题黑色转灰色字体风格 -->
+    <style name="BFYun.TextAppearance.Small.TitleBlack">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <style name="BFYun.TextAppearance.Smaller.Red">
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+
+    <!-- 图片大小设置处理 -->
+    <style name="BFYun.ImageAppearance">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">@dimen/image_default_size_width</item>
+        <item name="android:layout_height">@dimen/image_default_size_height</item>
+    </style>
+
+    <!--竖海报-->
+    <style name="BFYun.ImageAppearance.Vertical">
+        <item name="android:layout_width">@dimen/image_ve_size_width</item>
+        <item name="android:layout_height">@dimen/image_ve_size_height</item>
+    </style>
+
+    <!--横向海报-->
+    <style name="BFYun.ImageAppearance.Horizontal">
+        <item name="android:layout_width">@dimen/image_ho_size_width</item>
+        <item name="android:layout_height">@dimen/image_ho_size_height</item>
+    </style>
+
+    <!--横向海报-->
+    <style name="BFYun.ImageAppearance.Center">
+        <item name="android:layout_width">@dimen/image_center_size_width</item>
+        <item name="android:layout_height">@dimen/image_center_size_height</item>
+    </style>
+
+    <!--大的横向海报-->
+    <style name="BFYun.ImageAppearance.Horizontal.Big">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/image_big_ho_size_height</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <!-- 图片大小处理结束 -->
+
+    <!-- activity主题 出现时由中间变大 -->
+    <style name="Theme.AppearLargerTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Layer</item>
+    </style>
+    <!-- activity主题 出现时平移进出 -->
+    <style name="Theme.AppearTranslateTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translate</item>
+    </style>
+
+    <!--activity 放大进入，变小左侧平移退出-->
+    <style name="Animation.Activity.Layer" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/layer_larger_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/layer_smaller_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/layer_larger_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/layer_smaller_left_out</item>
+    </style>
+
+    <!--activity平移主题 右侧进入右侧退出，上一个activity左侧进入左侧退出-->
+    <style name="Animation.Activity.Translate" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <style name="detetail_header_normal">
+        <item name="android:textColor">@color/detail_page_header_text_normal</item>
+        <item name="android:textSize">14dip</item>
+    </style>
+
+    <style name="detetail_header_selected">
+        <item name="android:textColor">@color/detail_page_header_text_selected</item>
+        <item name="android:textSize">14dip</item>
+    </style>
+
+    <!--半透明，带动画进入style-->
+    <style name="transparent_activity">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@color/translucence_activity</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+        <!--item name="android:backgroundDimEnabled">true</item--><!--模糊-->
+        <!--item name="android:backgroundDimAmount">0.8</item-->
+    </style>
+
+    <!--半透明，不带动画进入style-->
+    <style name="transparent_activity_no_animation">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/translucence_activity</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+        <!--item name="android:backgroundDimEnabled">true</item--><!--模糊-->
+        <!--item name="android:backgroundDimAmount">0.8</item-->
+    </style>
+    <!--titlebar三角标示 选择按钮风格 YQH 20140306-->
+    <style name="titlebar_checkbox_theme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/titlebar_spinner_icon</item>
+    </style>
+
+    <!-- 弹出对话框背景样式 -->
+    <style name="UpdateDialogBackgroundStyle"  parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_width">@dimen/dialog_width</item>
+        <item name="android:layout_height">@dimen/dialog_height</item>
+        <item name="android:background">@drawable/dialog_update_bg</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:minWidth">@dimen/dialog_width</item>
+        <item name="android:minHeight">@dimen/dialog_minheight</item>
+        <item name="android:layout_marginLeft">12.6dip</item>
+        <item name="android:layout_marginRight">12.6dip</item>
+    </style>
+    <!-- 对话框样 -->
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- 底部提示框 -->
+    <style name="bottom_popup" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_popup_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_popup_out</item>
+    </style>
+
+    <!--资源列表下部虚线-->
+    <style name="up_stick_res_dot">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dimen_1</item>
+        <item name="android:background">@drawable/search_list_bg_press</item>
+    </style>
+
+    <!-- 文字风格统一，请在此基础上扩展新添加字体风格 -->
+    <!--文字风格:最大字号 -->
+    <style name="BFYun.TextAppearance.Biggest">
+        <item name="android:textSize">@dimen/text_size_biggest</item>
+    </style>
+    <!--文字风格:更大字号 -->
+    <style name="BFYun.TextAppearance.Bigger">
+        <item name="android:textSize">@dimen/text_size_bigger</item>
+    </style>
+    <!--文字风格:大字号 -->
+    <style name="BFYun.TextAppearance.Big">
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+    <!--文字风格:中字号 -->
+    <style name="BFYun.TextAppearance.Middle">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+    </style>
+    <!--文字风格:小字号 -->
+    <style name="BFYun.TextAppearance.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <!--文字风格:更小字号 -->
+    <style name="BFYun.TextAppearance.Smaller">
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+    <!--文字风格:最小字号 -->
+    <style name="BFYun.TextAppearance.Smallest">
+        <item name="android:textSize">@dimen/text_size_smallest</item>
+    </style>
+    <!--文字风格:微小字号 -->
+    <style name="BFYun.TextAppearance.Tiny">
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+    </style>
+
+    <!--文字风格:最大字号，黑色字 -->
+    <style name="BFYun.TextAppearance.Biggest.Black">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <!--文字风格:最大字号，灰白色字 -->
+    <style name="BFYun.TextAppearance.Biggest.GrayWhite">
+        <item name="android:textColor">@color/color_text_graywhite</item>
+    </style>
+    <!--文字风格:最大字号，白色字 -->
+    <style name="BFYun.TextAppearance.Biggest.White">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+    <!--文字风格:最大字号，深灰色字 -->
+    <style name="BFYun.TextAppearance.Biggest.DeepGray">
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+    <!--文字风格:最大字号，中灰色字 -->
+    <style name="BFYun.TextAppearance.Biggest.MiddleGray">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+    <!--文字风格:最大字号，浅灰色字 -->
+    <style name="BFYun.TextAppearance.Biggest.LightGray">
+        <item name="android:textColor">@color/color_text_light_gray</item>
+    </style>
+    <!--文字风格:最大字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Biggest.FaintGray">
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+    </style>
+    <!--文字风格:最大字号，深绿色字 -->
+    <style name="BFYun.TextAppearance.Biggest.DeepGreen">
+        <item name="android:textColor">@color/color_text_deep_green</item>
+    </style>
+    <!--文字风格:最大字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Biggest.Green">
+        <item name="android:textColor">@color/color_text_green</item>
+    </style>
+    <!--文字风格:最大字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Biggest.Green62b553">
+        <item name="android:textColor">@color/color_text_green_62b553</item>
+    </style>
+    <!--文字风格:最大字号，浅绿色字 -->
+    <style name="BFYun.TextAppearance.Biggest.LightGreen">
+        <item name="android:textColor">@color/color_text_light_green</item>
+    </style>
+    <!--文字风格:最大字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Biggest.GaintGreen">
+        <item name="android:textColor">@color/color_text_faint_green</item>
+    </style>
+    <!--文字风格:最大字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Biggest.Score">
+        <item name="android:textColor">@color/color_text_d3a257</item>
+    </style>
+
+    <!--文字风格:更大字号，黑色字 -->
+    <style name="BFYun.TextAppearance.Bigger.Black">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <!--文字风格:更大字号，灰白色字 -->
+    <style name="BFYun.TextAppearance.Bigger.GrayWhite">
+        <item name="android:textColor">@color/color_text_graywhite</item>
+    </style>
+    <!--文字风格:更大字号，白色字 -->
+    <style name="BFYun.TextAppearance.Bigger.White">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+    <!--文字风格:更大字号，深灰色字 -->
+    <style name="BFYun.TextAppearance.Bigger.DeepGray">
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+    <!--文字风格:更大字号，中灰色字 -->
+    <style name="BFYun.TextAppearance.Bigger.MiddleGray">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+    <!--文字风格:更大字号，浅灰色字 -->
+    <style name="BFYun.TextAppearance.Bigger.LightGray">
+        <item name="android:textColor">@color/color_text_light_gray</item>
+    </style>
+    <!--文字风格:更大字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Bigger.FaintGray">
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+    </style>
+    <!--文字风格:更大字号，深绿色字 -->
+    <style name="BFYun.TextAppearance.Bigger.DeepGreen">
+        <item name="android:textColor">@color/color_text_deep_green</item>
+    </style>
+    <!--文字风格:更大字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Bigger.Green">
+        <item name="android:textColor">@color/color_text_green</item>
+    </style>
+    <!--文字风格:更大字号，浅绿色字 -->
+    <style name="BFYun.TextAppearance.Bigger.LightGreen">
+        <item name="android:textColor">@color/color_text_light_green</item>
+    </style>
+    <!--文字风格:更大字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Bigger.GaintGreen">
+        <item name="android:textColor">@color/color_text_faint_green</item>
+    </style>
+    <!--文字风格:更大字号 对话框标题风格 -->
+    <style name="BFYun.TextAppearance.Bigger.DialogTitle">
+        <item name="android:textColor">@color/color_text_dialog_title</item>
+    </style>
+
+    <!--文字风格:大字号，黑色字 -->
+    <style name="BFYun.TextAppearance.Big.Black">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <!--文字风格:大字号，灰白色字 -->
+    <style name="BFYun.TextAppearance.Big.GrayWhite">
+        <item name="android:textColor">@color/color_text_graywhite</item>
+    </style>
+    <!--文字风格:大字号，白色字 -->
+    <style name="BFYun.TextAppearance.Big.White">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+    <!--文字风格:大字号，白色字 点击淡绿色 -->
+    <style name="BFYun.TextAppearance.Big.White2Faintgreen">
+        <item name="android:textColor">@drawable/color_text_white_faintgreen</item>
+    </style>
+    <!--文字风格:大字号，深灰色字 -->
+    <style name="BFYun.TextAppearance.Big.DeepGray">
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+    <!--文字风格:大字号，中灰色字 -->
+    <style name="BFYun.TextAppearance.Big.MiddleGray">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+    <!--文字风格:大字号，浅灰色字 -->
+    <style name="BFYun.TextAppearance.Big.LightGray">
+        <item name="android:textColor">@color/color_text_light_gray</item>
+    </style>
+    <!--文字风格:大字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Big.FaintGray">
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+    </style>
+    <!--文字风格:大字号，深绿色字 -->
+    <style name="BFYun.TextAppearance.Big.DeepGreen">
+        <item name="android:textColor">@color/color_text_deep_green</item>
+    </style>
+    <!--文字风格:大字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Big.Green" parent="android:TextAppearance">
+        <item name="android:textColor">@color/color_text_green</item>
+    </style>
+    <!--文字风格:大字号，浅绿色字 -->
+    <style name="BFYun.TextAppearance.Big.LightGreen">
+        <item name="android:textColor">@color/color_text_light_green</item>
+    </style>
+    <!--文字风格:大字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Big.GaintGreen">
+        <item name="android:textColor">@color/color_text_faint_green</item>
+    </style>
+    <!--文字风格:大字号，色值#ECECEC-->
+    <style name="BFYun.TextAppearance.Big.Filter">
+        <item name="android:textColor">@color/color_text_ececec</item>
+    </style>
+    <!--文字风格:大字号，色值#A27F5d-->
+    <style name="BFYun.TextAppearance.Big.BackTitle">
+        <item name="android:textColor">@color/color_text_a27f5d</item>
+    </style>
+    <!--文字风格:大字号，色值#ff761b 橘色-->
+    <style name="BFYun.TextAppearance.Big.YellowRed">
+        <item name="android:textColor">@color/grade_seekbar_press_end</item>
+    </style>
+
+    <!--文字风格:中字号，黑色字 -->
+    <style name="BFYun.TextAppearance.Middle.Black">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <!--文字风格:中字号，灰白色字 -->
+    <style name="BFYun.TextAppearance.Middle.GrayWhite">
+        <item name="android:textColor">@color/color_text_graywhite</item>
+    </style>
+    <!--文字风格:中字号，白色字 -->
+    <style name="BFYun.TextAppearance.Middle.White">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+    <!--文字风格:中字号，深灰色字 -->
+    <style name="BFYun.TextAppearance.Middle.DeepGray">
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+    <!--文字风格:中字号，中灰色字 -->
+    <style name="BFYun.TextAppearance.Middle.MiddleGray">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+    <!--文字风格:中字号，浅灰色字 -->
+    <style name="BFYun.TextAppearance.Middle.LightGray">
+        <item name="android:textColor">@color/color_text_light_gray</item>
+    </style>
+    <!--文字风格:中字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Middle.FaintGray">
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+    </style>
+    <!--文字风格:中字号，深绿色字 -->
+    <style name="BFYun.TextAppearance.Middle.DeepGreen">
+        <item name="android:textColor">@color/color_text_deep_green</item>
+    </style>
+    <!--文字风格:中字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Middle.Green">
+        <item name="android:textColor">@color/color_text_green</item>
+    </style>
+    <!--文字风格:中字号，浅绿色字 -->
+    <style name="BFYun.TextAppearance.Middle.LightGreen">
+        <item name="android:textColor">@color/color_text_light_green</item>
+    </style>
+    <!--文字风格:中字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Middle.GaintGreen">
+        <item name="android:textColor">@color/color_text_faint_green</item>
+    </style>
+    <!--文字风格:中字号，色值#ECECEC-->
+    <style name="BFYun.TextAppearance.Middle.Filter">
+        <item name="android:textColor">@color/color_text_ececec</item>
+    </style>
+
+    <!--文字风格:小字号，黑色字 -->
+    <style name="BFYun.TextAppearance.Small.Black">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <!--文字风格:小字号，灰白色字 -->
+    <style name="BFYun.TextAppearance.Small.GrayWhite">
+        <item name="android:textColor">@color/color_text_graywhite</item>
+    </style>
+    <!--文字风格:小字号，白色字 -->
+    <style name="BFYun.TextAppearance.Small.White">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+    <!--文字风格:小字号，白色字 点击淡绿色 -->
+    <style name="BFYun.TextAppearance.Small.White2Faintgreen">
+        <item name="android:textColor">@drawable/color_text_white_faintgreen</item>
+    </style>
+    <!--文字风格:小字号，深灰色字 -->
+    <style name="BFYun.TextAppearance.Small.DeepGray">
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+    <!--文字风格:小字号，中灰色字 -->
+    <style name="BFYun.TextAppearance.Small.MiddleGray">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+    <!--文字风格:小字号，浅灰色字 -->
+    <style name="BFYun.TextAppearance.Small.LightGray">
+        <item name="android:textColor">@color/color_text_light_gray</item>
+    </style>
+    <!--文字风格:小字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Small.FaintGray">
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+    </style>
+    <!--文字风格:小字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Small.FaintGray5c5c5c">
+        <item name="android:textColor">@color/color_text_gray_5c5c5c</item>
+    </style>
+    <!--文字风格:小字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Small.FaintGraye4e4e4">
+        <item name="android:textColor">@color/color_text_gray_e4e4e4</item>
+    </style>
+    <!--文字风格:小字号，深绿色字 -->
+    <style name="BFYun.TextAppearance.Small.DeepGreen">
+        <item name="android:textColor">@color/color_text_deep_green</item>
+    </style>
+    <!--文字风格:小字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Small.Green">
+        <item name="android:textColor">@color/color_text_green</item>
+    </style>
+    <!--文字风格:小字号，浅绿色字 -->
+    <style name="BFYun.TextAppearance.Small.LightGreen">
+        <item name="android:textColor">@color/color_text_light_green</item>
+    </style>
+    <!--文字风格:小字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Small.GaintGreen">
+        <item name="android:textColor">@color/color_text_faint_green</item>
+    </style>
+    <!--文字风格:小字号，深灰点击后浅灰色字 -->
+    <style name="BFYun.TextAppearance.Small.DeepGray2SmallGray">
+        <item name="android:textColor">@drawable/search_list_text</item>
+    </style>
+    <!--文字风格:小字号，设置绿色字 -->
+    <style name="BFYun.TextAppearance.Small.ConfigGreen">
+        <item name="android:textColor">@color/color_line_6bc255</item>
+    </style>
+    <!--文字风格:小字号，设置ap分享加载文字绿色字 -->
+    <style name="BFYun.TextAppearance.Small.PhoneShareRes">
+        <item name="android:textColor">@color/color_56b645</item>
+    </style>
+    <!--文字风格:小字号，设置绿色字 WC-->
+    <style name="BFYun.TextAppearance.Small.MineDownTextGreen">
+        <item name="android:textColor">@color/oilentry_progress</item>
+    </style>
+    <!--文字风格:更小字号，黑色字 -->
+    <style name="BFYun.TextAppearance.Smaller.Black">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <!--文字风格:更小字号，灰白色字 -->
+    <style name="BFYun.TextAppearance.Smaller.GrayWhite">
+        <item name="android:textColor">@color/color_text_graywhite</item>
+    </style>
+    <!--文字风格:更小字号，图文详情查看源码风格 -->
+    <style name="BFYun.TextAppearance.Smaller.ImageDetailSource">
+        <item name="android:textColor">@color/text_color_image_detail_source</item>
+    </style>
+    <!--文字风格:更小字号，白色字 -->
+    <style name="BFYun.TextAppearance.Smaller.White">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+    <!--文字风格:更小字号，白灰色字 点击灰色 -->
+    <style name="BFYun.TextAppearance.Smaller.White2Gray">
+        <item name="android:textColor">@drawable/color_text_whitegray_gray</item>
+    </style>
+    <!--文字风格:更小字号，深灰色字 -->
+    <style name="BFYun.TextAppearance.Smaller.DeepGray">
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+    <!--文字风格:更小字号，中灰色字 -->
+    <style name="BFYun.TextAppearance.Smaller.MiddleGray">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+    <!--文字风格:更小字号，浅灰色字 -->
+    <style name="BFYun.TextAppearance.Smaller.LightGray">
+        <item name="android:textColor">@color/color_text_light_gray</item>
+    </style>
+    <!--文字风格:更小字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Smaller.FaintGray">
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+    </style>
+    <!--文字风格:更小字号，深绿色字 -->
+    <style name="BFYun.TextAppearance.Smaller.DeepGreen">
+        <item name="android:textColor">@color/color_text_deep_green</item>
+    </style>
+    <!--文字风格:更小字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Smaller.Green">
+        <item name="android:textColor">@color/color_text_green</item>
+    </style>
+    <!--文字风格:更小字号，浅绿色字 -->
+    <style name="BFYun.TextAppearance.Smaller.LightGreen">
+        <item name="android:textColor">@color/color_text_light_green</item>
+    </style>
+    <!--文字风格:更小字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Smaller.GaintGreen">
+        <item name="android:textColor">@color/color_text_faint_green</item>
+    </style>
+    <!--文字风格:更小字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Smaller.BackRecover">
+        <item name="android:textColor">@drawable/text_recover</item>
+    </style>
+
+    <!--文字风格:最小字号，黑色字 -->
+    <style name="BFYun.TextAppearance.Smallest.Black">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <!--文字风格:最小字号，灰白色字 -->
+    <style name="BFYun.TextAppearance.Smallest.GrayWhite">
+        <item name="android:textColor">@color/color_text_graywhite</item>
+    </style>
+    <!--文字风格:最小字号，白色字 -->
+    <style name="BFYun.TextAppearance.Smallest.White">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+    <!--文字风格:最小字号，深灰色字 -->
+    <style name="BFYun.TextAppearance.Smallest.DeepGray">
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+    <!--文字风格:最小字号，中灰色字 -->
+    <style name="BFYun.TextAppearance.Smallest.MiddleGray">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+    <!--文字风格:最小字号，浅灰色字 -->
+    <style name="BFYun.TextAppearance.Smallest.LightGray">
+        <item name="android:textColor">@color/color_text_light_gray</item>
+    </style>
+    <!--文字风格:最小字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Smallest.FaintGray">
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+    </style>
+    <!--文字风格:最小字号，深绿色字 -->
+    <style name="BFYun.TextAppearance.Smallest.DeepGreen">
+        <item name="android:textColor">@color/color_text_deep_green</item>
+    </style>
+    <!--文字风格:最小字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Smallest.Green">
+        <item name="android:textColor">@color/color_text_green</item>
+    </style>
+    <!--文字风格:最小字号，浅绿色字 -->
+    <style name="BFYun.TextAppearance.Smallest.LightGreen">
+        <item name="android:textColor">@color/color_text_light_green</item>
+    </style>
+    <!--文字风格:最小字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Smallest.GaintGreen">
+        <item name="android:textColor">@color/color_text_faint_green</item>
+    </style>
+    <!--文字风格:最小字号，色值：#989898-->
+    <style name="BFYun.TextAppearance.Smallest.Time">
+        <item name="android:textColor">@color/color_text_989898</item>
+    </style>
+    <!--文字风格:最小字号，色值：#898989-->
+    <style name="BFYun.TextAppearance.Smallest.Share">
+        <item name="android:textColor">@color/color_898989</item>
+    </style>
+    <!--文字风格:最小字号，色值：#f6cbf53-->
+    <style name="BFYun.TextAppearance.Smallest.LightLightGreen">
+        <item name="android:textColor">@color/color_6cbf53</item>
+    </style>
+    <!--文字风格:微小字号，黑色字 -->
+    <style name="BFYun.TextAppearance.Tiny.Black">
+        <item name="android:textColor">@color/color_text_black</item>
+    </style>
+    <!--文字风格:微小字号，灰白色字 -->
+    <style name="BFYun.TextAppearance.Tiny.GrayWhite">
+        <item name="android:textColor">@color/color_text_graywhite</item>
+    </style>
+    <!--文字风格:微小字号，白色字 -->
+    <style name="BFYun.TextAppearance.Tiny.White">
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+    <!--文字风格:微小字号，深灰色字 -->
+    <style name="BFYun.TextAppearance.Tiny.DeepGray">
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+    <!--文字风格:微小字号，中灰色字 -->
+    <style name="BFYun.TextAppearance.Tiny.MiddleGray">
+        <item name="android:textColor">@color/color_text_middle_gray</item>
+    </style>
+    <!--文字风格:微小字号，浅灰色字 -->
+    <style name="BFYun.TextAppearance.Tiny.LightGray">
+        <item name="android:textColor">@color/color_text_light_gray</item>
+    </style>
+    <!--文字风格:微小字号，淡灰色字 -->
+    <style name="BFYun.TextAppearance.Tiny.FaintGray">
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+    </style>
+    <!--文字风格:微小字号，深绿色字 -->
+    <style name="BFYun.TextAppearance.Tiny.DeepGreen">
+        <item name="android:textColor">@color/color_text_deep_green</item>
+    </style>
+    <!--文字风格:微小字号，绿色字 -->
+    <style name="BFYun.TextAppearance.Tiny.Green">
+        <item name="android:textColor">@color/color_text_green</item>
+    </style>
+    <!--文字风格:微小字号，浅绿色字 -->
+    <style name="BFYun.TextAppearance.Tiny.LightGreen">
+        <item name="android:textColor">@color/color_text_light_green</item>
+    </style>
+    <!--文字风格:最小字号，淡绿色字字 -->
+    <style name="BFYun.TextAppearance.Tiny.GaintGreen">
+        <item name="android:textColor">@color/color_text_faint_green</item>
+    </style>
+
+    <!-- 文字风格:较小、浅灰色 LC 20140519 -->
+    <style name="BFYun.TextAppearance.Smaller.LightGrey">
+        <item name="android:textColor">@color/common_lightgray</item>
+    </style>
+    <!-- 文字风格:小、某灰色 LC 20140519 -->
+    <style name="BFYun.TextAppearance.Small.SmallGrey">
+        <item name="android:textColor">@color/fuel_3g_alert_text</item>
+    </style>
+    <!-- 文字风格:较小、某灰色 LC 20140519 -->
+    <style name="BFYun.TextAppearance.Smaller.SmallGrey">
+        <item name="android:textColor">@color/fuel_3g_alert_text</item>
+    </style>
+    <!-- 文字风格:较小、某灰色 LC 20140519 -->
+    <style name="BFYun.TextAppearance.Big.SmallGrey">
+        <item name="android:textColor">@color/fuel_3g_alert_text</item>
+    </style>
+
+    <style name="Widget" />
+    <!-- Base theme for the menu drawer. -->
+    <style name="Widget.MenuDrawer">
+        <item name="mdMenuBackground">@color/md__defaultBackground</item>
+        <item name="mdContentBackground">?android:attr/windowBackground</item>
+    </style>
+    <!--分享文字样式-->
+    <style name="ShareText" parent="BFYun.TextAppearance.Small.DeepGray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimen_10</item>
+    </style>
+
+    <!--icon-->
+    <style name="UpStickTitleIcon">
+        <item name="android:layout_width">@dimen/dimen_5</item>
+        <item name="android:layout_height">@dimen/dimen_13</item>
+        <item name="android:background">@color/oilentry_progress</item>
+        <item name="android:layout_marginRight">@dimen/dimen_7</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--带返回按钮的操作条：返回 喜欢 评论 分享 YQH 20140226-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@color/color_000000"
+                android:orientation="horizontal">
+    <!--返回按钮-->
+    <ImageView
+        android:id="@+id/back_operate_view_iv_back"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_20"
+        android:paddingTop="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_10"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_bg"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom|right"
+        android:paddingRight="@dimen/dimen_15"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+        <!--title-->
+        <TextView
+            android:id="@+id/back_operate_view_back_iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:ellipsize="end"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,253 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="default_head_height">46.667dp</dimen>
+    <dimen name="filmcard_tabhost_height">34dip</dimen>
+    <dimen name="filmcard_tabhost_textsize">8sp</dimen>
+
+    <dimen name="filter_label_height">22.666dp</dimen>
+    <dimen name="poster_vertical_width">100dip</dimen>
+    <dimen name="poster_vertical_height">133dip</dimen>
+
+    <dimen name="capacity_view_height">15dp</dimen>
+    <dimen name="capacity_view_divider">1dp</dimen>
+
+    <dimen name="card_marginTop">10dp</dimen>
+    <dimen name="card_marginLeft">10dp</dimen>
+    <dimen name="card_marginRight">10dp</dimen>
+
+    <dimen name="player_height">426dip</dimen>
+    <dimen name="player_definite_height">26dip</dimen>
+    <dimen name="player_definite_width">62dip</dimen>
+    <dimen name="player_fullscreen_width">32dip</dimen>
+
+    <dimen name="statusbar_height">25dp</dimen>
+
+    <dimen name="regist_tip_text_size">12sp</dimen>
+    <dimen name="regist_uname_text_size">18sp</dimen>
+    <dimen name="regist_regbtn_text_size">17dip</dimen>
+    <dimen name="regist_hint_text_size">16sp</dimen>
+
+    <dimen name="movie_poster_width">133.333dp</dimen>
+    <dimen name="movie_poster_height">173.333dp</dimen>
+
+    <dimen name="filter_layout_paddingTop">58.333dp</dimen>
+    <dimen name="filter_layout_paddingLeft">29.333dp</dimen>
+    <dimen name="filter_layout_paddingRight">30.666dp</dimen>
+
+    <dimen name="filter_item_paddingLeft">14.666dp</dimen>
+    <dimen name="filter_item_paddingRight">16dp</dimen>
+    <dimen name="filter_item_paddingTop">10.666dp</dimen>
+    <dimen name="filter_item_paddingBottom">10.666dp</dimen>
+    <dimen name="filter_item_halfMargin">10.666dp</dimen>
+
+    <dimen name="filter_row_all_marginBottom">53.333dp</dimen>
+    <dimen name="filter_row_other_marginBottom">26.666dp</dimen>
+
+    <dimen name="float_toast_paddingLeft">15.333dp</dimen>
+    <dimen name="float_toast_paddingRight">15.333dp</dimen>
+
+    <dimen name="home_float_layout_height">38dp</dimen>
+
+    <!-- shizy 添加字体大小规范（暂行） -->
+    <dimen name="text_14px">9.333dp</dimen>
+    <dimen name="text_16px">10.666dp</dimen>
+    <dimen name="text_18px">12dp</dimen>
+    <dimen name="text_20px">13.333dp</dimen>
+    <dimen name="text_22px">14.666dp</dimen>
+    <dimen name="text_24px">16dp</dimen>
+    <dimen name="text_26px">17.333dp</dimen>
+    <dimen name="text_28px">18.666dp</dimen>
+
+    <!--  添加统一 dimen字段 YQH 20140113 -->
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_9">9dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_17">17dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_19">19dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_21">21dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_23">23dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_26">26dp</dimen>
+    <dimen name="dimen_27">27dp</dimen>
+    <dimen name="dimen_29">28dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_31">32dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_34">34dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_39">39dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_41">41dp</dimen>
+    <dimen name="dimen_44">44dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_53">53dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_64">64dp</dimen>
+    <dimen name="dimen_66">66dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_79">79dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_86">86dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_110">110dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_135">135dp</dimen>
+    <dimen name="dimen_168">168dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="dialog_height">400dp</dimen>
+    <dimen name="dialog_minheight">400dp</dimen>
+    <dimen name="dialog_maxheight">400dp</dimen>
+    <dimen name="dialog_margin_bottom">40dp</dimen>
+    <dimen name="dialog_content_margin_top">26dp</dimen>
+    <dimen name="dialog_content_height">142dp</dimen>
+    <dimen name="dialog_content_margin_left_right">12.6dp</dimen>
+    <dimen name="dialog_content_margin_bottom">46dp</dimen>
+
+    <dimen name="text_size_old_super_large">22dip</dimen>
+    <dimen name="text_size_old_large">18dip</dimen>
+    <dimen name="text_size_old_middle">16dip</dimen>
+    <dimen name="text_size_old_small">14dip</dimen>
+    <dimen name="text_size_old_smaller">12dip</dimen>
+    <dimen name="text_size_old_least">10dip</dimen>
+    <dimen name="text_size_old_tiny">9dip</dimen>
+
+    <dimen name="text_size_amazing_large">25dip</dimen>
+    <dimen name="text_size_super_large">22dip</dimen>
+    <dimen name="text_size_large">18dip</dimen>
+    <dimen name="text_size_least">10dip</dimen>
+
+    <dimen name="dimen_progressbar">30dp</dimen>
+
+    <!--titlebar 间距、宽高 YQH 20140228 -->
+    <dimen name="titlebar_padding">8dip</dimen>
+    <dimen name="titlebar_height">44dip</dimen>
+
+    <!--图片大小-->
+    <dimen name="image_default_size_width">26.66dip</dimen>
+    <dimen name="image_default_size_height">26.66dip</dimen>
+
+    <!--小编头像图片大小-->
+    <dimen name="image_card_head_width">38.666dp</dimen>
+    <dimen name="image_card_head_height">38.666dp</dimen>
+    <dimen name="image_card_head_radius">13.333dp</dimen>
+
+    <!--图片竖向的海报-->
+    <dimen name="image_ve_size_width">93.333dip</dimen>
+    <dimen name="image_ve_size_height">124dip</dimen>
+
+    <!--图片横向的海报-->
+    <dimen name="image_ho_size_width">124dip</dimen>
+    <dimen name="image_ho_size_height">93.333dip</dimen>
+
+    <!--图片正方形的海报-->
+    <dimen name="image_center_size_width">100dip</dimen>
+    <dimen name="image_center_size_height">100dip</dimen>
+
+    <!--图片大的横向图片-->
+    <dimen name="image_big_ho_size_width">293.33dp</dimen>
+    <dimen name="image_big_ho_size_height">133.33dp</dimen>
+
+    <!--频道页竖向海报-->
+    <dimen name="channel_poster_ve_width">133.33dip</dimen>
+    <dimen name="channel_poster_ve_height">173.33dip</dimen>
+
+    <!--频道页横向海报-->
+    <dimen name="channel_poster_ho_width">133.33dip</dimen>
+    <dimen name="channel_poster_ho_height">98.66dip</dimen>
+
+    <!--升级对话框 YQH 20140311-->
+    <dimen name="dialog_update_title_line_height">1dip</dimen>
+    <dimen name="dialog_update_title_margin_top">20dip</dimen>
+    <dimen name="dialog_update_title_margin_bottom">12dip</dimen>
+
+    <!--带删除编辑框 删除图标距右边界位置-->
+    <dimen name="edittext_rightdrawable_padding">6.6dip</dimen>
+    <dimen name="edittext_padding_left">14dip</dimen>
+
+    <!--视频详情页单个游标左padding-->
+    <dimen name="detail_viewpager_cursor_padding_left">66dip</dimen>
+    <!--资源下载列表图片尺寸-->
+    <dimen name="up_stick_necessary_poster_width">160dip</dimen>
+    <dimen name="up_stick_necessary_poster_height">240dip</dimen>
+    <dimen name="up_stick_check_poster_width">80dip</dimen>
+    <dimen name="up_stick_check_poster_height">107dip</dimen>
+    <dimen name="up_stick_check_app_lengch">67dip</dimen>
+
+    <!-- ui统一的字体大小，根据ui确定的大小统一修改，请以后再有新的文字大小添加到此处扩展 YQH 20140221  -->
+    <!--字号：最大  34px-->
+    <dimen name="text_size_biggest">21.6dip</dimen>
+    <!--字号：更大  28px-->
+    <dimen name="text_size_bigger">20dip</dimen>
+    <!--字号：大   26px-->
+    <dimen name="text_size_big">18.6dip</dimen>
+    <!--字号：中  24px-->
+    <dimen name="text_size_middle">17.4dip</dimen>
+    <!--字号：小  20px-->
+    <dimen name="text_size_small">16.8dip</dimen>
+    <!--字号：更小  18px-->
+    <dimen name="text_size_smaller">13.4dip</dimen>
+    <!--字号：最小  16px-->
+    <dimen name="text_size_smallest">12dip</dimen>
+    <!--字号：微小  14px-->
+    <dimen name="text_size_tiny">9.4dip</dimen>
+
+    <dimen name="titlebar_title_maxwidth">240dip</dimen>
+    <!--toast上下间距 YQH 20140228 -->
+    <dimen name="toast_margin">20dip</dimen>
+
+    <!--搜索显示间距-->
+    <dimen name="search_list_top">18dip</dimen>
+    <dimen name="search_list_left">24dip</dimen>
+    <dimen name="search_callword_width">300dip</dimen>
+    <dimen name="search_result_width">280dip</dimen>
+    <dimen name="search_download_icon_padding">13dip</dimen>
+
+    <!--评论用户名长度-->
+    <dimen name="comment_user_name_width">190dip</dimen>
+
+    <!--自定义toast宽度-->
+    <dimen name="toast_custom_width">360dip</dimen>
+
+    <dimen name="batch_delete_height">33.333dp</dimen>
+    <dimen name="batch_delete_paddingTop">4.666dp</dimen>
+    <dimen name="batch_delete_paddingBottom">8dp</dimen>
+    <dimen name="batch_delete_paddingLeft">4.666dp</dimen>
+    <dimen name="batch_delete_paddingRight">4.666dp</dimen>
+    <dimen name="batch_delete_margin">4.666dp</dimen>
+
+    <dimen name="confirm_window_width">249.333dp</dimen>
+    <dimen name="confirm_window_height">140dp</dimen>
+
+    <!--时间线-->
+    <dimen name="time_line_paddingLeft">5.333dip</dimen>
+    <dimen name="time_line_paddingRight">5.333dip</dimen>
+    <dimen name="time_line_paddingTop">2.666dip</dimen>
+    <dimen name="time_line_paddingBottom">1.333dip</dimen>
+
+    <dimen name="up_stick_img_poster_width">151dip</dimen>
+    <dimen name="up_stick_img_poster_height">228dip</dimen>
+</resources>

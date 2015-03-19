@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_dust_yellow">#ffe0d8c1</color>
+    <color name="common_deep_dust_yellow">#ffb3902d</color>
+    <color name="common_gray">#ffeeeeee</color>
+    <color name="common_deep_gray">#ffb3b3b3</color>
+    <color name="common_deeper_gray">#ff333333</color>
+    <color name="common_lightgray">#cccccc</color>
+    <color name="common_black">#000000</color>
+    <color name="common_white">#ffffffff</color>
+    <color name="backcolor">#eeeeee</color>
+    <color name="Transparency">#00000000</color>
+    <color name="background_transparency">#80000000</color>
+    <color name="background">#F1F1F1</color>
+    <color name="search_list_text_nomal">#9E9E9E</color>
+    <drawable name="search_list_bg_nomal">#ffffff</drawable>
+    <drawable name="search_list_bg_press">#f0f0f0</drawable>
+
+    <color name="color_000000">#000000</color>
+    <color name="color_f0fbed">#F0FBED</color>
+    <color name="color_fee4c9">#FEE4C9</color>
+    <color name="color_a59d97">#A59D97</color>
+    <color name="color_7d8688">#7D8688</color>
+    <color name="color_339933">#339933</color>
+    <color name="color_f2f2f2">#F2F2F2</color>
+    <color name="color_f8f8f8">#F8F8F8</color>
+
+    <color name="back_home_float_layout">#CCF3BA4C</color>
+
+    <color name="comment_num">#d9d9d9</color>
+    <color name="comment_num_more">#cb342e</color>
+    <color name="grade_text">#a9a9a9</color>
+    <color name="login_input_text">#999999</color>
+    <color name="tips_text">#F9784B</color>
+
+    <drawable name="common_white">#ffffff</drawable>
+    <drawable name="picture_comment_head">#dedede</drawable>
+
+    <color name="image_detail_webview_bg">#eeeeee</color>
+    <color name="text_color_image_detail_source">#8A847A</color>
+
+
+
+    <color name="text_default">#2c2c2c</color>
+
+    <color name="title_button_bg_transparent">#00FFFFFF</color>
+
+    <color name="detail_page_header_bg">#eaeaea</color>
+    <color name="detail_page_header_text_normal">#333333</color>
+    <color name="detail_page_header_text_selected">#66cc66</color>
+
+    <drawable name="view_transparent">#00ffffff</drawable>
+
+    <!-- wangChen -->
+    <color name="up_stick_resource_line">#58b03f</color>
+    <!-- wangChen end -->
+    <!-- for Lichen -->
+    <color name="fuel_resource_layout_bg">#D4E5CE</color>
+    <!-- Lichen end -->
+
+    <!-- 文字色值 -->
+    <!--titlebar标题默认色值-->
+    <!--文字色值 灰色-->
+    <color name="text_gray">#666666</color>
+    <!--文字色值 浅黑-->
+    <color name="text_light_black">#343434</color>
+    <color name="text_red">#ff0000</color>
+
+    <!--评分 seekbar中色值-->
+    <color name="grade_seekbar_normal">#c2c2c2</color>
+    <color name="grade_seekbar_press_start">#ce0400</color>
+    <color name="grade_seekbar_press_center">#fd6200</color>
+    <color name="grade_seekbar_press_end">#ff761b</color>
+    <!--透明-->
+    <color name="no_color">#00ffffff</color>
+
+    <color name="translucence_activity">#e0000000</color>
+
+    <!--dialog提示窗-->
+    <color name="dialog_update_title_base_line">#ededed</color>
+
+    <color name="fuel_big_ball_layout_bg">#DD333333</color>
+    <color name="bottom_popup_bg">#000000</color>
+    <color name="bottom_popup_text">#FFFFFF</color>
+    <color name="fuel_big_ball_nomal_text">#FFFFFF</color>
+    <color name="fuel_big_ball_progress_text">#09473a</color>
+    <color name="fuel_3g_alert_text">#808080</color>
+    <color name="fuel_3g_alert_submit">#FFFFFF</color>
+
+    <color name="image_turn_show_bg">#000000</color>
+
+
+    <!--文字色值：深灰-->
+    <color name="color_text_deep_gray">#333333</color>
+    <!--文字色值：中灰-->
+    <color name="color_text_middle_gray">#666666</color>
+    <!--文字色值：浅灰-->
+    <color name="color_text_light_gray">#999999</color>
+    <!--文字色值：淡灰-->
+    <color name="color_text_faint_gray">#c4c4c4</color>
+    <!--文字色值：淡灰-->
+    <color name="color_text_gray_5c5c5c">#5c5c5c</color>
+    <!--文字色值：淡灰-->
+    <color name="color_text_gray_e4e4e4">#e4e4e4</color>
+
+    <!--文字色值：黑-->
+    <color name="color_text_black">#000000</color>
+    <!--文字色值：灰白色-->
+    <color name="color_text_graywhite">#cccccc</color>
+    <!--文字色值：白-->
+    <color name="color_text_white">#ffffff</color>
+
+    <!--文字色值：深绿-->
+    <color name="color_text_deep_green">#3e4f38</color>
+    <!--文字色值：绿-->
+    <color name="color_text_green">#009900</color>
+    <!--文字色值：绿-->
+    <color name="color_text_green_62b553">#62b553</color>
+    <!--文字色值：浅绿-->
+    <color name="color_text_light_green">#a0dd8d</color>
+    <!--文字色值：淡绿-->
+    <color name="color_text_faint_green">#cff2c4</color>
+    <!--文字色值：#ECECEC-->
+    <color name="color_text_ececec">#ECECEC</color>
+    <!--文字色值：#A27F5d-->
+    <color name="color_text_a27f5d">#A27F5d</color>
+    <!--文字色值：#D3A257-->
+    <color name="color_text_d3a257">#D3A257</color>
+    <!--文字色值：#343434-->
+    <color name="color_text_dialog_title">#343434</color>
+
+    <!--文字色值：#8E8E8E-->
+    <color name="color_text_8E8E8E">#8E8E8E</color>
+    <!--文字色值：#989898-->
+    <color name="color_text_989898">#989898</color>
+    <!--文字色值：#84838383-->
+    <color name="color_text_84838383">#84838383</color>
+    <!--文字色值：#99CCCC-->
+    <color name="color_text_99cccc">#99CCCC</color>
+    <!--设置的分割线，绿色：#6bc255-->
+    <color name="color_line_6bc255">#6bc255</color>
+
+    <!-- 我的里的列表背景-->
+    <drawable name="mine_list_bg_normal">#FFFFFF</drawable>
+    <drawable name="mine_list_bg_pressed">#F0F0F0</drawable>
+
+    <color name="confirm_window_background">#F0F0F0</color>
+    <!--列表 -->
+    <color name="oilentry_progress">#6bc053</color>
+
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_e5e4e4">#e5e4e4</color>
+    <color name="color_69c052">#69c052</color>
+    <color name="color_e4952b">#e4952b</color>
+    <color name="color_4c4c4c">#4c4c4c</color>
+    <color name="color_898989">#898989</color>
+    <color name="color_56b645">#56b645</color>
+    <color name="color_f6fbef">#f6fbef</color>
+
+    <color name="tab_pressed">#6633B5E5</color>
+    <color name="tab_green">#8EC52F</color>
+    <color name="tab_blue">#4BC1F3</color>
+    <color name="tab_red">#F86F45</color>
+    <color name="tab_yellow">#FFBA1F</color>
+    <color name="tab_bg">#EDEDED</color>
+    <!-- The default background of the menu. -->
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="color_5a5a5a">#5a5a5a</color>
+    <color name="color_2d2d2d">#2d2d2d</color>
+    <color name="color_d5d5d5">#d5d5d5</color>
+    <color name="color_6cbf53">#6cbf53</color>
+
+    <color name="color_tab_title">#69be59</color>
+    <color name="color_tab_title_bg">#f5f5f5</color>
+    <color name="color_4b4b4b">#4b4b4b</color>
+</resources>

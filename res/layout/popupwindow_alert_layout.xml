@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/translucence_activity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="255dip"
+        android:layout_height="166.67dip"
+        android:orientation="vertical"
+        android:background="@color/common_white"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button_layout"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/popupwindow_alert_tips"
+                style="@style/BFYun.TextAppearance.Smaller.Gray"
+                android:layout_centerHorizontal="true"
+                android:text="@string/detail_no_network"
+                />
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="20dip"
+            android:paddingLeft="27dip"
+            android:paddingRight="27dip"
+            android:id="@+id/button_layout">
+            
+            <Button
+                android:layout_width="94dip"
+                android:layout_height="32dip"
+                android:id="@+id/popupwindow_alert_ok"
+                android:layout_centerHorizontal="true"
+                android:text="@string/detail_dialog_ok"
+                style="@style/BFYun.TextAppearance.Smaller.White"
+                android:background="@drawable/popupwindow_ok_background"
+                />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>

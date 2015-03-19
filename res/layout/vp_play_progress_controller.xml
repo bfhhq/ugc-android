@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 进度条 -->
+    <bf.cloud.android.components.mediaplayer.playprogress.PlayProgressBar
+        android:id="@+id/mediacontroller_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="10dip"
+        android:progressDrawable="@drawable/vp_playprogress_seek_drawable"
+        android:thumb="@drawable/vp_playprogress_seek_thumb"
+        android:thumbOffset="3.5dip"
+        vp:leftdot="@drawable/vp_circle_left"
+        vp:rightdot="@drawable/vp_circle_right" />
+
+    <!-- 播放缓冲速率 -->
+    <TextView
+        android:id="@+id/bufferRate"
+        style="@style/BFYun.TextAppearance.Smaller.GrayWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mediacontroller_progress"
+        android:layout_below="@+id/mediacontroller_progress"
+        android:gravity="top" />
+
+    <!-- 播放总时长 -->
+    <TextView
+        android:id="@+id/time"
+        style="@style/BFYun.TextAppearance.Smaller.GrayWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/mediacontroller_progress"
+        android:layout_below="@id/mediacontroller_progress"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip" />
+
+    <!-- 当前播放时长 -->
+    <TextView
+        android:id="@+id/time_current"
+        style="@style/BFYun.TextAppearance.Smaller.GrayWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mediacontroller_progress"
+        android:layout_gravity="center_horizontal"
+        android:layout_toLeftOf="@id/time"
+        android:gravity="top"
+        android:paddingLeft="4dip" />
+</RelativeLayout>

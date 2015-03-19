@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/translucence_activity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/confirm_window_width"
+        android:layout_height="@dimen/confirm_window_height"
+        android:orientation="vertical"
+        android:background="@color/confirm_window_background"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/confirm_window_tips"
+            style="@style/BFYun.TextAppearance.Middle.DeepGray"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="42.666dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/confirm_window_confirm"
+                style="@style/Confirm_Window_Button"
+                android:text="@string/confirm"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/confirm_window_divider"/>
+            <Button
+                android:id="@+id/confirm_window_cancel"
+                style="@style/Confirm_Window_Button"
+                android:text="@string/cancel" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

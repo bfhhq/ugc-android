@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardListView">
+        <attr name="deleteable" format="boolean" />
+        <attr name="header_position" format="string" />
+        <attr name="footer_position" format="string" />
+        <attr name="content_position" format="string" />
+
+    </declare-styleable>
+    <declare-styleable name="HeadView">
+        <attr name="title" format="reference|string" />
+        <attr name="leftEnable" format="boolean" />
+        <attr name="rightEnable" format="boolean" />
+        <attr name="searchEnable" format="boolean" />
+        <attr name="showSubTitle" format="boolean" />
+        <attr name="showSearchButton" format="boolean" />
+        <attr name="left_text" format="reference|string" />
+        <attr name="right_text" format="reference|string" />
+        <attr name="left_btn" format="enum">
+            <enum name="none" value="0" />
+            <enum name="back" value="1" />
+            <enum name="set" value="2" />
+            <enum name="filter" value="3" />
+            <enum name="menu" value="4" />
+            <enum name="delete" value="5" />
+            <enum name="publish" value="6" />
+            <enum name="text" value="7" />
+        </attr>
+        <attr name="right_btn" format="enum">
+            <enum name="none" value="0" />
+            <enum name="back" value="1" />
+            <enum name="set" value="2" />
+            <enum name="filter" value="3" />
+            <enum name="menu" value="4" />
+            <enum name="delete" value="5" />
+            <enum name="publish" value="6" />
+            <enum name="text" value="7" />
+        </attr>
+    </declare-styleable>
+    <!--titlebar 属性标签 YQH 20140228-->
+    <declare-styleable name="BaseTitleBar">
+        <attr name="titlebar_title" format="reference|string" />
+        <attr name="titlebar_leftEnable" format="boolean" />
+        <attr name="titlebar_spinners_icon" format="boolean" />
+        <attr name="titlebar_left_text" format="reference|string" />
+        <attr name="titlebar_left_background" format="reference|integer" />
+        <attr name="titlebar_right_text" format="reference|string" />
+        <attr name="titlebar_right_background" format="reference|integer" />
+        <!--titlebar类型 YQH 20140228 -->
+        <attr name="titlebar_type" format="enum">
+            <enum name="back_title" value="0" />
+            <enum name="back_title_text" value="1" />
+            <enum name="title" value="2" />
+            <enum name="back_title_button" value="3" />
+            <enum name="delete_cancle_title_ok" value="4" />
+            <enum name="choice_title_search" value="5" />
+            <enum name="cancle_title_ok" value="6" />
+            <enum name="title_search" value="7" />
+            <enum name="title_button" value="8" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SimpleHeadView">
+        <attr name="shv_title" format="reference|string" />
+        <attr name="shv_showSubTitle" format="boolean" />
+        <attr name="shv_showSearchButton" format="boolean" />
+        <attr name="shv_left_btn_text" format="reference|string" />
+        <attr name="shv_right_btn_text" format="reference|string" />
+        <attr name="shv_left_btn" format="enum">
+            <enum name="none" value="0" />
+            <enum name="back" value="1" />
+            <enum name="set" value="2" />
+            <enum name="filter" value="3" />
+            <enum name="menu" value="4" />
+            <enum name="delete" value="5" />
+            <enum name="publish" value="6" />
+            <enum name="def" value="7" />
+        </attr>
+        <attr name="shv_right_btn" format="enum">
+            <enum name="none" value="0" />
+            <enum name="back" value="1" />
+            <enum name="set" value="2" />
+            <enum name="filter" value="3" />
+            <enum name="menu" value="4" />
+            <enum name="delete" value="5" />
+            <enum name="publish" value="6" />
+            <enum name="def" value="7" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AbsCapacityView">
+        <attr name="count" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="Player">
+        <attr name="menuBarColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="MInfo">
+        <attr name="column" format="integer" />
+        <attr name="paddingLeft" format="dimension" />
+        <attr name="paddingRight" format="dimension" />
+        <attr name="layoutWidth" format="dimension" />
+        <attr name="layoutHeight" format="dimension" />
+        <attr name="buttonBackground" format="reference" />
+    </declare-styleable>
+
+
+    <!--带返回按钮的操作栏 YQH 20140226-->
+    <declare-styleable name="BackOperateView">
+        <attr name="showBackButton" format="boolean" />
+        <attr name="showLikeButton" format="boolean" />
+        <attr name="showCommentButton" format="boolean" />
+        <attr name="showShareButton" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Template1Body">
+        <attr name="showActor" format="boolean" />
+    </declare-styleable>
+
+    <!-- TabViewPager used these -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <!-- Reference to a style for the menu drawer. -->
+    <attr name="menuDrawerStyle" format="reference" />
+
+    <!-- Styleables used for styling the menu drawer. -->
+    <declare-styleable name="MenuDrawer">
+
+        <!-- Drawable to use for the background of the content. -->
+        <attr name="mdContentBackground" format="reference" />
+
+        <!-- Drawable to use for the background of the menu. -->
+        <attr name="mdMenuBackground" format="reference" />
+
+        <!-- The size of the menu. -->
+        <attr name="mdMenuSize" format="dimension" />
+
+        <!-- Drawable used as indicator for the active view. -->
+        <attr name="mdActiveIndicator" format="reference" />
+
+        <!-- Defines whether the content will have a dropshadow onto the menu. Default is true. -->
+        <attr name="mdDropShadowEnabled" format="boolean" />
+
+        <!-- The size of the drop shadow. Default is 6dp -->
+        <attr name="mdDropShadowSize" format="dimension" />
+
+        <!-- The color of the drop shadow. Default is #FF000000. -->
+        <attr name="mdDropShadowColor" format="color" />
+
+        <!-- Drawable used for the drop shadow. -->
+        <attr name="mdDropShadow" format="reference" />
+
+        <!-- The touch bezel size. -->
+        <attr name="mdTouchBezelSize" format="dimension" />
+
+        <!-- Whether the indicator should be animated between active views. -->
+        <attr name="mdAllowIndicatorAnimation" format="boolean" />
+
+        <!-- The maximum animation duration -->
+        <attr name="mdMaxAnimationDuration" format="integer" />
+
+        <!-- Drawable that replaces the up indicator -->
+        <attr name="mdSlideDrawable" format="reference" />
+
+        <!-- String to use as the up indicators content description when the drawer is open -->
+        <attr name="mdDrawerOpenUpContentDescription" format="string" />
+
+        <!-- String to use as the up indicators content description when the drawer is closed -->
+        <attr name="mdDrawerClosedUpContentDescription" format="string" />
+
+        <!-- Whether an overlay should be drawn as the drawer is opened and closed -->
+        <attr name="mdDrawOverlay" format="boolean" />
+
+        <!-- The position of the drawer -->
+        <attr name="mdPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+            <enum name="start" value="4" />
+            <enum name="end" value="5" />
+        </attr>
+    </declare-styleable>
+    <!--上下拉刷新 YQH 20140903-->
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="none" value="0x4" />
+        </attr>
+    </declare-styleable>
+</resources>

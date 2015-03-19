@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UgcDemoAndroid</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sd_unmounted">SD卡异常,部分资源无法显示</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="detail_no_network">当前没有网络请连接wifi</string>
+    <string name="detail_dialog_ok">确定</string>
+    <string name="detail_dialog_cancel">取消</string>
+    <string name="clarity">清晰度</string>
+    <string name="brightness">屏幕亮度</string>
+    <string name="volume">音量</string>
+</resources>

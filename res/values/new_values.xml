@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ************ color ************ -->
+    <color name="color_green">#6ABF52</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_bg">#F9F9F9</color>
+    <color name="color_gray_a">#C7C7C7</color>
+    <color name="color_gray_b">#AEAEAE</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_sel_green">#5fbf42</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_fbfbfb">#fbfbfb</color>
+    <!-- ************ dimen ************ -->
+    <dimen name="menu_radius_adapt_value">30dp</dimen>
+    <dimen name="main_ball_x_offset">1px</dimen>
+    <dimen name="main_ball_y_offset">2dp</dimen>
+    <dimen name="main_header_pop_off_x">-32dp</dimen>
+    <dimen name="main_header_pop_off_y">-8dp</dimen>
+    <!-- ************ global ************ -->
+    <integer name="main_config_lab_counts">9</integer>
+    <string-array name="main_config_labs">
+        <item>搞笑</item>
+        <item>美食</item>
+        <item>社会</item>
+        <item>时尚</item>
+        <item>音乐</item>
+        <item>数码</item>
+        <item>军事</item>
+        <item>校园</item>
+        <item>科技</item>
+    </string-array>
+    <string-array name="main_config_labs_id">
+        <item>tags[16]</item>
+        <item>tags[4124]</item>
+        <item>tags[127]</item>
+        <item>tags[3521]</item>
+        <item>tags[533]</item>
+        <item>tags[113135]</item>
+        <item>tags[2062]</item>
+        <item>tags[902]</item>
+        <item>tags[113425]</item>
+    </string-array>
+
+    <string name="like_lab_0">搞笑</string>
+    <string name="like_lab_1">屌丝</string>
+    <string name="like_lab_2">体育</string>
+    <string name="like_lab_3">社会</string>
+    <string name="like_lab_4">美食</string>
+    <string name="like_lab_5">军事</string>
+    <string name="like_lab_6">儿童</string>
+    <string name="like_lab_7">数码</string>
+    <string name="like_lab_8">生活</string>
+    <string name="like_lab_9">怀旧</string>
+    <string name="like_lab_10">校园</string>
+    <string name="like_lab_11">科技</string>
+    <string name="like_lab_12">汽车</string>
+    <string name="like_lab_13">音乐</string>
+    <string name="like_lab_14">时尚</string>
+    <string name="app_exit_info">再按一次返回键退出</string>
+
+    <style name="app_toast_anim">
+        <item name="android:windowEnterAnimation">@anim/app_toast_in</item>
+        <item name="android:windowExitAnimation">@anim/app_toast_out</item>
+    </style>
+
+    <style name="dash_gap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/shape_dash_gap</item>aa
+    </style>
+
+    <style name="radio_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/selector_config_check_mark</item>
+    </style>
+
+    <integer-array name="confit_size_space">
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1024</item>
+    </integer-array>
+    <!-- ************ welcome ************ -->
+    <style name="welcome_table_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <!-- ************ main ************ -->
+    <string name="main_header_home">油箱</string>
+    <string name="main_header_offline">全部频道</string>
+    <string name="main_header_wifi">发现</string>
+    <string name="main_header_mine">我的</string>
+
+    <style name="main_pop_anim">
+        <item name="android:windowEnterAnimation">@anim/main_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/main_pop_out</item>
+    </style>
+
+
+    <!-- ************ main config ************ -->
+    <string name="main_config_title">下载设置</string>
+    <string name="main_config_lab_name">我的标签</string>
+    <string name="main_config_lab_sel">全选</string>
+    <string name="main_config_lab_def">还原</string>
+    <string name="main_config_wifi_name">wifi连接后自动加油</string>
+    <string name="main_config_wifi_info">当电量低于10%,不会为您自动加油</string>
+    <string name="main_config_oil_name">每次加油大小: %1$s</string>
+    <string name="main_config_oil_info">约%1$d分钟下载完成</string>
+    <string name="main_config_oil_400">400MB</string>
+    <string name="main_config_oil_600">600MB</string>
+    <string name="main_config_oil_800">800MB</string>
+    <string name="main_config_oil_1g">1GB</string>
+    <string name="main_config_oil_full">下满剩余空间(%1$s)</string>
+    <string name="main_config_revise_info">修改过的设置下次加油时生效</string>
+    <string name="mine_download_finish">下载完成</string>
+    <string name="mine_download_title">下载列表</string>
+    <integer-array name="main_config_oil_size">
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="main_config_oil_time">
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+    </integer-array>
+
+    <style name="main_config_lab_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">4.6dp</item>
+        <item name="android:paddingBottom">4.6dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:background">@drawable/selector_main_config_lab_btn_bg</item>
+        <item name="android:textSize">@dimen/text_size_smallest</item>
+        <item name="android:textColor">@color/color_text_white</item>
+    </style>
+
+    <style name="main_config_lab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_main_config_lab_tx</item>
+        <item name="android:background">@drawable/selector_main_config_lab_bg</item>
+    </style>
+    <!-- ************ mine ************ -->
+    <color name="mine_storage_progress1">#6BC053</color>
+    <color name="mine_storage_progress2">#E78D6D</color>
+    <color name="mine_storage_progress3">#D6D6D6</color>
+    <string name="mine_user_login">立即登录</string>
+    <string name="mine_item_download">下载列表</string>
+    <string name="mine_item_phone_share">分享加油站APP及资源</string>
+    <string name="mine_item_history">观看记录</string>
+    <string name="mine_item_favorites">我的收藏</string>
+    <string name="mine_item_setting">设置</string>
+    <string name="mine_item_stroage_title">手机空间</string>
+    <string name="mine_item_storage_left_def">已用:--</string>
+    <string name="mine_item_storage_right_def">剩余:--</string>
+    <string name="mine_item_storage_left">油箱已用%1$s</string>
+    <string name="mine_item_storage_right">加油站可用空间%1$s</string>
+    <string name="mine_item_storage_prompt">加油站会为您保留300MB的存储空间</string>
+
+    <style name="config_item_cutline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_f2f2f2</item>
+    </style>
+
+    <style name="mine_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">9dp</item>
+        <item name="android:paddingRight">9dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/selector_mine_item</item>
+    </style>
+
+    <style name="use_help_item" parent="mine_item">
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="mine_item_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="mine_item_tx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/color_text_deep_gray</item>
+    </style>
+
+    <style name="mine_item_small_tx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_text_faint_gray</item>
+        <item name="android:textSize">@dimen/text_size_smallest</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="config_item_signs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/config_item_signs</item>
+    </style>
+
+    <style name="mine_item_info_tx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textColor">@color/color_text_8E8E8E</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!-- ************ config ************ -->
+    <string name="config_header">设置</string>
+    <string name="config_about">关于</string>
+    <string name="config_opinion">意见反馈</string>
+    <string name="config_update">检查更新</string>
+    <string name="config_cache">清除缓存</string>
+    <string name="config_logout">退出登录</string>
+    <string name="config_cache_clean_info">清除缓存中...</string>
+    <string name="use_help">使用帮助</string>
+
+    <!-- ************ about ************ -->
+    <string name="config_about_header">关于</string>
+    <!-- ************ wifi ************ -->
+    <string name="main_wifi_connection">连接</string>
+    <string name="main_wifi_disconnection">断开</string>
+    <string name="main_wifi_loading">正在为您检索附近可用的加油站热点</string>
+    <string name="main_wifi_list_empty">亲，没搜到热点，点刷新试试</string>
+    <string name="main_wifi_header_type_yb">[加油棒]连接中:</string>
+    <string name="main_wifi_header_type_wg">[微光]连接中:</string>
+    <string name="main_wifi_header_type_un">[未知]连接中:</string>
+    <string name="main_wifi_header_info">为您检索到%1$s个热点</string>
+    <string name="main_wifi_oil_info">亲，加完油才可以进入哦</string>
+    <string name="main_wifi_other_network">请断开USB后再尝试</string>
+    <string name="main_wifi_disconnect_ap_info">您当前正在加油中，断开热点会停止加油，是否断开？</string>
+    <string name="main_wifi_disconnect_ap_lBtn">残忍断开</string>
+    <string name="main_wifi_disconnect_ap_rBtn"> 继续加油</string>
+    <string name="main_wifi_change_ap_info">您当前正在加油中，切换热点会停止加油，是否切换？</string>
+    <string name="main_wifi_change_ap_lBtn">切换</string>
+    <string name="main_wifi_change_ap_rBtn">取消</string>
+    <string name="main_wifi_disconnect_info">热点已断开</string>
+    <string name="main_wifi_enter_prompt">已连接，点击进入资源列表</string>
+    <string name="main_wifi_connected_fail">连接失败，请稍候重试或选择其他热点</string>
+    <string name="wifi_service_pass_disconnected"> 连接异常断开，请重新连接</string>
+    <!-- ************ mine ************ -->
+    <string name="mine_records_item_del">删除</string>
+    <string name="mine_header_edit">编辑</string>
+    <string name="mine_header_edit_name">确定删除?</string>
+    <string name="mine_list_empty">没有记录哦~</string>
+    <string name="mine_list_empty_load">正在加载哦~</string>
+    <!-- ************ mine download ************ -->
+    <string name="mine_dl_header">我下载的</string>
+    <!-- ************ mine history ************ -->
+    <string name="mine_his_header">观看记录</string>
+    <string name="mine_his_item_name">%1$s %2$s</string>
+    <string name="mine_his_item_episode">集</string>
+    <string name="mine_his_item_info">上次观看至\n%1$s</string>
+    <!-- ************ mine favorites ************ -->
+    <string name="mine_fav_header">我的收藏</string>
+    <!-- ************ use help ************ -->
+    <string name="use_help_list_one">如何在暴风加油点加油？</string>
+    <string name="use_help_list_two">如何寻找附件的wifi加油？</string>
+    <string name="use_help_list_three">如何通过USB加油？</string>
+    <string name="use_help_list_four">加油完成的资源在哪里？</string>
+
+    <string name="share_app_now">正在分享...</string>
+    <string name="mine_share_btn_tx">一键分享</string>
+</resources>

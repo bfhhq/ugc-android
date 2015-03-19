@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="mediaplayer">
+        <attr name="leftdot" format="reference" />
+        <attr name="rightdot" format="reference" />
+
+    </declare-styleable>
+
+</resources>
