@@ -34,6 +34,7 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.apache.commons.io.IOUtils;
 
 import com.bfcloud.publish.*;
 import bf.cloud.android.playutils.VodPlayer;
@@ -207,7 +208,7 @@ public class MainActivity extends Activity implements VideoPublisher.ProgressLis
     	    	if (resp.getStatusLine().getStatusCode() != 200)
     	    		return "";
     	    	
-    	    	return EntityUtils.toString(resp.getEntity());    	    	
+    	    	return IOUtils.toString(resp.getEntity().getContent(), "UTF-8");    	    	
     	    
     	    }catch(Exception e){
     	    	Log.e(TAG, e.toString());
@@ -265,21 +266,13 @@ public class MainActivity extends Activity implements VideoPublisher.ProgressLis
 			    try{
 			    	final HttpResponse resp = httpclient.execute(httpget);
 
+			    	final String json = IOUtils.toString(resp.getEntity().getContent(), "UTF-8");
+			    	
 			    	
 			       	mainHandler.post(new Runnable(){
 						@Override
 						public void run() {
-							try {
-								
-								byte[] buf = new byte[(int) resp.getEntity().getContentLength()];
-								resp.getEntity().getContent().read(buf);
-								
-								refreshCompleted(new String(buf, "UTF-8"));
-								
-							} catch (Exception e) {
-							}
-							
-
+							refreshCompleted(json);
 						}});	    	
 			    	    	    	
 			    
