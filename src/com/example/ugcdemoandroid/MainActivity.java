@@ -337,7 +337,7 @@ public class MainActivity extends Activity implements VideoPublisher.ProgressLis
 		 String url = urls.get(position);
 		 String name = videoItems.get(position);
 		  
-        VodPlayer.play(this, url , "", name, 0, true, null);
+        VodPlayer.play(this, url , "", name, 1, true, null);
 			    
 	 }
 
